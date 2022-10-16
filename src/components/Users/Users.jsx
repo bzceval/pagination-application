@@ -3,7 +3,7 @@ import React from 'react'
 const Users = ({ data }) => {
 
     return (
-        <div className='container my-5'> 
+        <div className='container my-5'>
             {data.map((item) => {
                 const { id, name, age, image, email } = item
                 return (
@@ -23,7 +23,7 @@ const Users = ({ data }) => {
                     </div>
                 )
             })}
-        </div> 
+        </div>
     )
 }
 
