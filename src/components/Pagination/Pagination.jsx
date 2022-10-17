@@ -11,7 +11,7 @@ const Pagination = ({ usersPerPage, totalUsers, paginate, currentPage, setCurren
   const previousPage = () => {
     currentPage < 2 ? setCurrentPage(currentUserCount) : setCurrentPage(currentPage - 1)
   }
-  
+
   const nextPage = () => {
     currentPage === currentUserCount ? setCurrentPage(currentPage === currentUserCount) : setCurrentPage(currentPage + 1)
   }
@@ -21,7 +21,7 @@ const Pagination = ({ usersPerPage, totalUsers, paginate, currentPage, setCurren
   return (
     <div>
       <nav aria-label="Page navigation example">
-        <ul className="pagination justify-content-center ">
+        <ul className="pagination justify-content-center">
           <li><a className="page-link" href="#!" onClick={previousPage}>Previous</a></li>
           {pageNumbers.map(number => (
             <li onClick={() => paginate(number)} key={number} className="page-item"> <a href="!#" className="page-link">{number}</a></li>
