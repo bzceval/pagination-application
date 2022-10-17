@@ -1,4 +1,4 @@
-import React from 'react'
+
 
 const UserCards = ({data}) => {
     const {name, age, image, email } = data
