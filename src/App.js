@@ -1,11 +1,11 @@
 import './App.scss';
-import UserCards from "./components/UserCards/UserCards"
-import data from "./utils/data"
+import Users from './components/Users/Users';
+
 
 function App() {
   return (
     <div className="App"> 
-      <UserCards data={data}/>
+      <Users />
     </div>
   );
 }
