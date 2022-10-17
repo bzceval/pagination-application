@@ -1,0 +1,34 @@
+@import "../../scss/variables";
+
+.user-cards {
+    font-family: 'Prompt', sans-serif;
+    color: $lightColor;
+    transition: all .6s;
+
+    .card {
+        background-color: $darkPurple;
+        border: none;
+        box-shadow: $midDarkPurple 0px 3px 8px;
+
+        img {
+            height: 100%;
+            transition: all .6s;
+
+            &:hover {
+                transform: scale(1.1);
+                transition: all .6s;
+            }
+        }
+        small {
+            color: $lightColor !important;
+            display: flex;
+            justify-content: end;
+            padding-right: 1.5rem;
+
+        }
+        &:hover {
+            transition: all .6s;
+            transform: translateX(15px);
+        }
+    }
+}
