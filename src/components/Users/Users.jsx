@@ -19,7 +19,7 @@ const Users = () => {
     return (
         <div>
             {currentUsers.map((currentUsers, id) => <UserCards key={id} data={currentUsers} />)}
-            <Pagination usersPerPage={usersPerPage} totalUsers={data.length} paginate={paginate}/>
+            <Pagination usersPerPage={usersPerPage} totalUsers={data.length} paginate={paginate} currentPage={currentPage} setCurrentPage={setCurrentPage}/>
         </div>
     )
 }
