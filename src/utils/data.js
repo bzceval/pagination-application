@@ -116,7 +116,7 @@ const data = [
       name: 'Zhozefina Ohrimovich',
       age: 54,
       image: 'https://randomuser.me/api/portraits/women/58.jpg',
-      email: 'zhozefina.ohrimovich@example.com',
+      email: 'zhoze.ohrimovich@example.com',
     },
     {
       id: '3793794T',

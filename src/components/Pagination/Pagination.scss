@@ -1,0 +1,35 @@
+@import "../../scss/variables";
+
+nav {
+    width: 50%;
+    margin-top: 50px;
+
+    li {
+        width: 100%;
+        border: none;
+        text-align: center;
+        transition: all .5s;
+
+        a {
+            background-color: $darkPurple !important;
+            color: $lightColor !important;
+            border-radius: 8px !important;
+
+            &:active {
+                background-color: $midDarkPurple !important;
+
+            }
+
+            &:focus {
+                background-color: $midDarkPurple !important;
+            }
+        }
+
+        &:hover {
+            transform: scale(.9);
+            transition: all .8s;
+        }
+
+
+    }
+}
