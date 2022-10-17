@@ -1,12 +1,12 @@
-
+import "./UserCards.scss"
 
 const UserCards = ({data}) => {
     const {name, age, image, email } = data
     return (
-        <div>
-            <div className='container my-5'>
-                <div className="shadow-lg card mb-5" style={{ maxWidth: '400px' }}>
-                    <div className="row g-0">
+        <div className="user-cards">
+            <div className='container user-card'>
+                <div className="shadow-lg card m-3" style={{ maxWidth: '540px' }}>
+                    <div className="row g-2">
                         <div className="col-4">
                             <img src={image} className="rounded-start" alt="..." />
                         </div>

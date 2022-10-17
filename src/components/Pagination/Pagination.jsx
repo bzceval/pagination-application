@@ -1,3 +1,4 @@
+import "./Pagination.scss"
 import data from "../../utils/data"
 const Pagination = ({ usersPerPage, totalUsers, paginate, currentPage, setCurrentPage }) => {
 
@@ -18,9 +19,8 @@ const Pagination = ({ usersPerPage, totalUsers, paginate, currentPage, setCurren
 
 
 
-  return (
-    <div>
-      <nav aria-label="Page navigation example">
+  return ( 
+      <nav className="pagination-container">
         <ul className="pagination justify-content-center">
           <li><a className="page-link" href="#!" onClick={previousPage}>Previous</a></li>
           {pageNumbers.map(number => (
@@ -28,8 +28,7 @@ const Pagination = ({ usersPerPage, totalUsers, paginate, currentPage, setCurren
           ))}
           <li><a className="page-link" href="#!" onClick={nextPage}>Next</a></li>
         </ul>
-      </nav>
-    </div>
+      </nav> 
   )
 }
 

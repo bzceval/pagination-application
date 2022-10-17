@@ -1,3 +1,4 @@
+import "./Users.scss"
 import UserCards from '../UserCards/UserCards'
 import data from "../../utils/data"
 import { useState } from 'react'
@@ -5,7 +6,7 @@ import Pagination from "../Pagination/Pagination"
 
 const Users = () => {
     const [currentPage, setCurrentPage] = useState(1)
-    const [usersPerPage] = useState(2)
+    const [usersPerPage] = useState(5)
 
     //Get current user
     const indexOfLastUser = currentPage * usersPerPage;
@@ -17,9 +18,9 @@ const Users = () => {
 
 
     return (
-        <div>
+        <div className="users">
             {currentUsers.map((currentUsers, id) => <UserCards key={id} data={currentUsers} />)}
-            <Pagination usersPerPage={usersPerPage} totalUsers={data.length} paginate={paginate} currentPage={currentPage} setCurrentPage={setCurrentPage}/>
+            <Pagination usersPerPage={usersPerPage} totalUsers={data.length} paginate={paginate} currentPage={currentPage} setCurrentPage={setCurrentPage} />
         </div>
     )
 }
