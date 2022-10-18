@@ -14,3 +14,4 @@ The page will reload when you make changes.\
 You may also see any lint errors in the console.
 
 ## DEMO
+![Animation](https://user-images.githubusercontent.com/100320309/196355066-8f1aea89-67e0-4a0c-87cb-a720e3db9ef8.gif)
