@@ -16,11 +16,10 @@ const Users = () => {
     //Change page
     const paginate = (pageNumber) => setCurrentPage(pageNumber)
 
-
     return (
         <div className="users">
             <h3>Employee List</h3>
-            <h6 className="text-end">Showing {indexOfFirstUser <= 1 ? 0 : indexOfFirstUser} to {indexOfLastUser} Employees</h6>
+            <h6 className="text-end">Showing {indexOfFirstUser <= 1 ? 1 : indexOfFirstUser} to {indexOfLastUser} Employees</h6>
             {currentUsers.map((currentUsers, id) => <UserCards key={id} data={currentUsers} />)}
             <Pagination usersPerPage={usersPerPage} totalUsers={data.length} paginate={paginate} currentPage={currentPage} setCurrentPage={setCurrentPage} />
         </div>

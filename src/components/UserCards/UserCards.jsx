@@ -5,10 +5,10 @@ const UserCards = ({ data }) => {
     return (
         <div className="user-cards">
             <div className='container'>
-                <div className="card mb-3 mt-3" style={{ maxWidth: '540px' }}>
-                    <div className="row g-5">
+                <div className="card mb-3 mt-3" style={{ maxWidth: '740px' }}>
+                    <div className="row">
                         <div className="col-auto img">
-                            <img src={image} className="rounded-start" alt="profile-image" />
+                            <img src={image} className="rounded" alt="profile-image" />
                         </div>
                         <div className="col">
                             <div className="card-body">

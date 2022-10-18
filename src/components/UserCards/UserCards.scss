@@ -7,7 +7,7 @@
 
     .card {
         background-color: $darkPurple;
-        border: none;
+        border: none; 
         box-shadow: $midDarkPurple 0px 3px 8px; 
 
         .img {
@@ -15,12 +15,13 @@
                 display: flex;
                 justify-content: center;
                 width: 100%;
-                margin-top: 20%;
+                margin-top: 10%;
+                margin-bottom: 5%;
                 transition: all .6s;
 
                 &:hover {
                     transition: all .6s;
-                    transform: scale(1.1)
+                    transform: scale(1.1);
                 }
             }
            
