@@ -24,7 +24,7 @@ const Pagination = ({ usersPerPage, totalUsers, paginate, currentPage, setCurren
       <ul className="pagination justify-content-center">
         <li><a className="page-link" href="#!" onClick={previousPage}>Previous</a></li>
         {pageNumbers.map(number => (
-          <li onClick={() => paginate(number)} key={number} className="page-item"><a href="!#" className="page-link">{number}</a></li>
+          <li className="page-item"><a href="#!" onClick={() => paginate(number)} key={number}  className="page-link">{number}</a></li>
         ))}
         <li><a className="page-link" href="#!" onClick={nextPage}>Next</a></li>
       </ul>
