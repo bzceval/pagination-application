@@ -7,10 +7,10 @@ const UserCards = ({ data }) => {
             <div className='container'>
                 <div className="card mb-3 mt-3" style={{ maxWidth: '540px' }}>
                     <div className="row g-5">
-                        <div className="col-4">
+                        <div className="col-auto img">
                             <img src={image} className="rounded-start" alt="profile-image" />
                         </div>
-                        <div className="col-8">
+                        <div className="col">
                             <div className="card-body">
                                 <h5 className="mb-3">{name}</h5>
                                 <p>{email} </p>
