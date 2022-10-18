@@ -1,6 +1,5 @@
 {
-  "homepage": "https://github.com/bzceval/pagination-application",
-  "name": "employee",
+  "name": "pagination-app",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -12,12 +11,9 @@
     "react-dom": "^18.2.0",
     "react-scripts": "5.0.1",
     "sass": "^1.55.0",
-    "web-vitals": "^2.1.0",
-    "yarn": "^1.22.19"
+    "web-vitals": "^2.1.0"
   },
   "scripts": {
-    "predeploy": "yarn run build",
-    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
@@ -40,8 +36,5 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  },
-  "devDependencies": {
-    "gh-pages": "^4.0.0"
   }
 }
